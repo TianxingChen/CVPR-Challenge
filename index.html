@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+      <style>
+        .speakers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .speaker {
+            text-align: center;
+            width: calc(25% - 20px);
+            box-sizing: border-box;
+        }
+        .speaker img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .speaker p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .speaker {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .speaker {
+                width: 100%;
+            }
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="TODO"
+    />
+    <meta name="keywords" content="TODO" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      RoboTwin Challenge @CVPR 2025
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./public/workshop.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./public/index.css" rel="stylesheet" />
+    <link href="./public/media.css" rel="stylesheet" />
+    <link href="./public/sidebars.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/base.js"></script>
+  </head>
+
+  <body>
+    <div class="sidebarsWrapper">
+      <div class="sidebars">
+        <a class="barWrapper" clear href="#abstract-a" id="bar2"
+          ><span>Abstract</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#pipeline" id="bar3"
+          ><span>Pipeline of G3Flow</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#visualization" id="bar4"
+        ><span>Visualization of G3Flow</span>
+        <a class="barWrapper" clear href="#experiment" id="bar8"
+          ><span>Experiment</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#Bibtex" id="bar9"
+          ><span>Bibtex</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#acknowledgements" id="bar9"
+          ><span>Acknowledgements</span>
+          <div class="bar"></div
+        ></a>
+      </div>
+    </div>
+    <main class="content">
+      <section class="heading" style="position: relative; width: 100%; overflow: hidden;">
+        <div class="background-image" style="position: relative; width: 100%; height: auto;">
+            <img src="files/main.jpg" alt="Background Image" style="width: 100%; height: auto; display: block;">
+            <div class="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+            <div class="content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center; color: white;">
+                <h1 class="title">
+                    RoboTwin Dual-Arm Collaboration Challenge <br> 2nd MEIS Workshop @CVPR2025<br>
+                </h1>
+                <!-- <section class="authors">
+                    <ul>
+                        <li>
+                            <span><a href="https://tianxingchen.github.io/" rel="noreferrer" target="_blank">TMP</a> <sup>*</sup></span>,
+                        </li>
+                    </ul>
+                </section> -->
+                <section class="links">
+                    <ul>
+                        <a href="https://arxiv.org/abs/2411.18369" rel="noreferrer" target="_blank">
+                            <li>
+                                <span>Challenge Details</span>
+                            </li>
+                        </a>
+                        <a href="https://arxiv.org/pdf/2411.18369" rel="noreferrer" target="_blank">
+                            <li>
+                                <span>Organizers</span>
+                            </li>
+                        </a>
+                        <a href="https://arxiv.org/pdf/2411.18369" rel="noreferrer" target="_blank">
+                          <li>
+                                <span>Sponsors</span>
+                            </li>
+                        </a>
+                        <a href="https://arxiv.org/pdf/2411.18369" rel="noreferrer" target="_blank">
+                            <li>
+                                <span>Board</span>
+                            </li>
+                        </a>
+                        <a href="https://github.com/TianxingChen/G3Flow" rel="noreferrer" target="_blank">
+                            <li style="background-color: green">
+                                <span>Sign up</span>
+                            </li>
+                        </a>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+        
+      
+      <a class="anchor" id="abstract-a"></a>
+        
+      
+      <!-- Overall -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Overall</h2>
+        </div>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
+          Why this challenges ?
+        </p>
+      </section>
+
+      <!-- Organizer -->
+      <a class="anchor" id="organizer"></a>
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Organizers</h2>
+        </div>
+        <div class="grid"> 
+          <div class="speaker">
+              <figure>
+              <img src="files/organizers/yaomu.jpg" width="200" />
+              <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+              </figure>
+          </div>
+          <div class="speaker">
+              <figure>
+              <img src="files/organizers/tianxingchen.jpg" width="200" />
+              <figcaption><b><a href="http://web.stanford.edu/~schwager/">Tianxing Chen</a></b><br />Shenzhen University</figcaption>
+              </figure>
+          </div>
+          <div class="speaker">
+            <figure>
+            <img src="files/organizers/pingluo.jpg" width="200" />
+            <figcaption><b><a href="http://web.stanford.edu/~schwager/">Ping Luo</a></b><br />The University of Hong Kong</figcaption>
+            </figure>
+          </div>
+          <div class="speaker">
+            <figure>
+            <img src="files/organizers/yaomu.jpg" width="200" />
+            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+            </figure>
+        </div>
+        <div class="speaker">
+            <figure>
+            <img src="files/organizers/yaomu.jpg" width="200" />
+            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+            </figure>
+        </div>
+        </div>
+      </section>
+
+    
+      <!-- Sponsors -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Sponsors</h2>
+        </div>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
+          Sponsors
+        </p>
+      </section>
+
+
+
+    </main>
+  </body>
+</html>
