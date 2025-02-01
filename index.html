@@ -2,19 +2,9 @@
 <html xmlns="http://www.w3.org/1999/html">
   <head>
       <style>
-        .speakers {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
         .speaker {
             text-align: center;
-            width: calc(25% - 20px);
+            width: calc(20% - 0px);
             box-sizing: border-box;
         }
         .speaker img {
@@ -65,25 +55,35 @@
     <div class="sidebarsWrapper">
       <div class="sidebars">
         <a class="barWrapper" clear href="#abstract-a" id="bar2"
-          ><span>Abstract</span>
+          ><span>Overall</span>
           <div class="bar"></div
         ></a>
         <a class="barWrapper" clear href="#pipeline" id="bar3"
-          ><span>Pipeline of G3Flow</span>
+          ><span>Competition Content (3 Tracks)</span>
           <div class="bar"></div
         ></a>
-        <a class="barWrapper" clear href="#visualization" id="bar4"
-        ><span>Visualization of G3Flow</span>
+        <a class="barWrapper" clear href="#pipeline" id="bar3"
+          ><span>Platforms</span>
+          <div class="bar"></div
+        ></a>
         <a class="barWrapper" clear href="#experiment" id="bar8"
-          ><span>Experiment</span>
+          ><span>Important Dates</span>
           <div class="bar"></div
         ></a>
         <a class="barWrapper" clear href="#Bibtex" id="bar9"
-          ><span>Bibtex</span>
+          ><span>Organizers</span>
           <div class="bar"></div
         ></a>
         <a class="barWrapper" clear href="#acknowledgements" id="bar9"
-          ><span>Acknowledgements</span>
+          ><span>Sponsors</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#acknowledgements" id="bar9"
+          ><span>Related Work</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#acknowledgements" id="bar9"
+          ><span>Contact</span>
           <div class="bar"></div
         ></a>
       </div>
@@ -123,7 +123,7 @@
                         </a>
                         <a href="https://arxiv.org/pdf/2411.18369" rel="noreferrer" target="_blank">
                             <li>
-                                <span>Board</span>
+                                <span>LeaderBoard</span>
                             </li>
                         </a>
                         <a href="https://github.com/TianxingChen/G3Flow" rel="noreferrer" target="_blank">
@@ -143,12 +143,123 @@
       
       <!-- Overall -->
       <section class="details" style="text-align: justify;">
-        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+        <!-- <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
           <h2>Overall</h2>
-        </div>
+        </div> -->
         <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
-          Why this challenges ?
+Embodied AI has emerged as a pivotal domain in modern robotics, driven by the need for robots to interact seamlessly with their environments and perform complex tasks autonomously. While significant progress has been made in single-agent systems, the next frontier lies in multi-agent cooperation and the ability to handle diverse manipulation tasks. This challenge, hosted within the MEIS workshop at CVPR 2025, aims to advance the frontiers of Embodied AI in robotic dual-arm manipulation tasks by leveraging the RoboTwin simulation platform and the AgileX Cobot-Magic and Tack-pika robotic platforms. The challenge is designed to address the complexities and nuances of robotic manipulation in both simulated and real-world environments, focusing on three distinct yet interconnected tracks: Rigid Object Manipulation, Tactile Manipulation, and Deformable Object Manipulation.
+As we look to the future, the insights gained from this challenge will pave the way for more sophisticated multi-agent systems capable of handling complex, real-world tasks. The integration of advanced AI techniques, such as generative models and reinforcement learning, will be crucial in overcoming the current limitations and unlocking the full potential of robotic manipulation. This challenge is a step towards realizing a future where robots can autonomously perform a wide range of tasks, from industrial automation to assisting humans in everyday activities. We invite researchers, engineers, and innovators from around the world to participate in this challenge and contribute to the advancement of Embodied AI in robotic manipulation. Together, we can push the boundaries of what is possible and create a more intelligent and capable robotic future.
         </p>
+      </section>
+
+
+      
+      <!-- Competition Content -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Competition Content (3 Tracks)</h2>
+          <div style="margin-top: -10px"></div>
+          <strong style="color: red;">See <a href="">Competition Manual</a> for more details</strong>
+          <div style="margin-top: 10px"></div>
+        </div>
+        
+      </section>
+      <hr><div style="margin-top: -10px"></div>
+      
+      <h3>Track 1: Rigid Object Manipulation</h3><div style="margin-top: -10px"></div>
+      <h4>Task Overview</h4><div style="margin-top: -10px"></div>
+      This track focuses on the precise manipulation of rigid objects, requiring participants to develop algorithms that enable robots to grasp, move, and interact with solid objects in a controlled manner. The tasks will test the robots' ability to plan and execute complex motions, leveraging both simulation and real-world trials to validate their solutions.
+      <h4>Competition Process</h4><div style="margin-top: -10px"></div>
+      Coming Soon...
+
+      
+
+
+      
+      
+      <div style="margin-top: 20px"></div><hr><div style="margin-top: -10px"></div>
+      <h3>Track 2: Tactile Manipulation</h3><div style="margin-top: -10px"></div>
+      <h4>Task Overview</h4><div style="margin-top: -10px"></div>
+      Tactile manipulation involves the use of haptic feedback and fine motor skills to handle objects with precision. Participants will need to design systems that can interpret tactile data and adapt their manipulation strategies accordingly. This track emphasizes the importance of sensory feedback in achieving robust and reliable manipulation tasks.
+      <h4>Competition Process</h4><div style="margin-top: -10px"></div>
+      Coming Soon...
+
+
+
+      <div style="margin-top: 20px"></div><hr><div style="margin-top: -10px"></div>
+      <h3>Track 3: Deformable Object Manipulation</h3><div style="margin-top: -10px"></div>
+      <h4>Task Overview</h4><div style="margin-top: -10px"></div>
+      Dealing with deformable objects presents unique challenges due to their variable shapes and unpredictable behavior. This track will require participants to develop advanced control algorithms and perception techniques to manipulate soft or flexible objects effectively. The tasks will assess the robots' ability to adapt to the changing properties of the objects during manipulation.
+      <h4>Competition Process</h4><div style="margin-top: -10px"></div>
+      Coming Soon...
+
+      <div style="margin-top: 20px"></div><hr>
+
+
+      <!-- Platforms -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Platforms</h2>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; justify-content: center; text-align: center;">
+            <div style="display: flex; justify-content: space-between;">
+              <div style="height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                    <img src="./files/platform/cobot-magic.png" style="height: 100%;" alt="Cobot-Magic Platform">
+                  <div style="margin-top: 10px;">
+                      Hardware Platform<br>
+                      <a href="https://global.agilex.ai/products/cobot-magic" style="display: block; color: blue; text-decoration: none;">Cobot-Magic (from AgileX)</a>
+                  </div>
+              </div>
+              <div style="height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                  <video autoplay loop muted style="height: 100%;">
+                      <source src="./files/platform/RoboTwin.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div style="margin-top: 10px;">
+                      Simulation Benchmark Platform<br>
+                      <a href="https://global.agilex.ai/products/cobot-magic" style="display: block; color: blue; text-decoration: none;">RoboTwin</a>
+                  </div>
+              </div>
+              <div style="height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                  <img src="./files/platform/cobot-magic.png" style="height: 100%;" alt="Cobot-Magic Platform">
+                  <div style="margin-top: 10px;">
+                      Cloud Platform<br><a href="https://global.agilex.ai/products/cobot-magic" style="display: block; color: blue; text-decoration: none;">From D-Robotics</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <div style="margin-top: 30px;">
+      <!-- Important Timeline -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Important Dates</h2>
+        </div>
+        <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+          <tr>
+              <th style="width: 33.33%;">Event</th>
+              <th style="width: 33.33%;">Date and Time</th>
+              <th style="width: 33.33%;">Time Remaining</th>
+          </tr>
+          <tr>
+              <td>Sign in Deadline</td>
+              <td>Jan 31 '25 01:59 AM CST</td>
+              <td style="color: #666;"></td>
+          </tr>
+          <tr>
+            <td>Code and Checkpoint Submission Deadline</td>
+            <td>Jan 31 '25 01:59 AM CST</td>
+            <td style="color: #666;"></td>
+          </tr>
+          <tr>
+            <td>On-site Competition</td>
+            <td>Jan 31 '25 01:59 AM CST</td>
+            <td style="color: #666;"></td>
+        </tr>
+        </table>
       </section>
 
       <!-- Organizer -->
@@ -161,35 +272,36 @@
           <div class="speaker">
               <figure>
               <img src="files/organizers/yaomu.jpg" width="200" />
-              <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+              <figcaption><b><a href="https://yaomarkmu.github.io/">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
               </figure>
           </div>
           <div class="speaker">
               <figure>
               <img src="files/organizers/tianxingchen.jpg" width="200" />
-              <figcaption><b><a href="http://web.stanford.edu/~schwager/">Tianxing Chen</a></b><br />Shenzhen University</figcaption>
+              <figcaption><b><a href="http://tianxingchen.github.io">Tianxing Chen</a></b><br />Shenzhen University</figcaption>
               </figure>
           </div>
           <div class="speaker">
             <figure>
             <img src="files/organizers/pingluo.jpg" width="200" />
-            <figcaption><b><a href="http://web.stanford.edu/~schwager/">Ping Luo</a></b><br />The University of Hong Kong</figcaption>
+            <figcaption><b><a href="http://luoping.me/">Ping Luo</a></b><br />The University of Hong Kong</figcaption>
             </figure>
           </div>
           <div class="speaker">
             <figure>
-            <img src="files/organizers/yaomu.jpg" width="200" />
-            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+            <img src="files/organizers/zanxinchen.jpg" width="200" />
+            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Zanxin Chen</a></b><br />Shenzhen University</figcaption>
             </figure>
         </div>
         <div class="speaker">
             <figure>
             <img src="files/organizers/yaomu.jpg" width="200" />
-            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Yao Mu</a></b><br />The University of Hong Kong</figcaption>
+            <figcaption><b><a href="https://scholar.google.com/citations?hl=en&amp;user=8m8taGEAAAAJ">Zhiqiang Xie</a></b><br />AgileX Robotics</figcaption>
             </figure>
         </div>
         </div>
       </section>
+
 
     
       <!-- Sponsors -->
@@ -198,9 +310,40 @@
           <h2>Sponsors</h2>
         </div>
         <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
-          Sponsors
+          Huawei, D-Robots, AgileX Robotics
         </p>
       </section>
+
+      <!-- Related Work -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Related Work</h2>
+        </div>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
+          <ul>
+            <li>RoboTwin (as Benchmark): <a href="https://robotwin-benchmark.github.io/early-version/">Project Page</a>, <a href="">Paper</a>, <a href="">Github Repo</a></li>
+            <li>TacPika (as Tactile Hardware): </a></li>
+            <li>3D Diffusion Policy (as 3D Baseline): </a></li>
+            <li>Diffusion Policy (as 2D Baseline): </a></li>
+            <li>ACT (as 2D Baseline): </a></li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section class="details" style="text-align: justify;">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%;">
+          <h2>Contact</h2>
+        </div>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
+          <ul>
+            <li>Yao Mu: ...</li>
+            <li>Tianxing Chen: <a href="mailto:chentianxing2002@gmail.com">chentianxing2002@gmail.com</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <div style="height: 50px;"></div>
 
 
 
